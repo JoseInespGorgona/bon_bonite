@@ -7,4 +7,4 @@ Característica: Navegacion por categorías
 
   Escenario: Navegacion exitosa por categorias
     Cuando selecciona cada categoría
-    Entonces se visualiza los productos de la categoria seleccionada
+    #Entonces se visualiza los productos de la categoria seleccionada
