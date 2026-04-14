@@ -3,7 +3,7 @@ Característica: Compra de productos
 
   Antecedentes:
     Dado que el usuario esta en la pagina de login
-    #Cuando ingresa un documento y clave valido
+    Cuando ingresa un documento y clave valido
 
   Escenario: Compra exitosa de un producto
     Cuando selecciona y agregue el producto al carito de compra

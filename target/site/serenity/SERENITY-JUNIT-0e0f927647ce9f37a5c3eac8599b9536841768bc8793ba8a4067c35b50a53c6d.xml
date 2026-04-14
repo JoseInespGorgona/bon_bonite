@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Compra de productos" skipped="1" tests="1" time="26.5" timestamp="2026-04-14 11:53:28"><testcase name="Compra exitosa de un producto"><skipped/></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Compra de productos" skipped="0" tests="1" time="71.8" timestamp="2026-04-14 03:30:01"><testcase name="Compra exitosa de un producto"/></testsuite>
