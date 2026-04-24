@@ -12,10 +12,5 @@ public class NavegacionSD {
         OnStage.theActorCalled("actor")
                 .attemptsTo(NavegacionT.navegacionT());
     }
-    @Entonces("se visualiza los productos de la categoria seleccionada")
-    public void se_visualiza_los_productos_de_la_categoria_seleccionada() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
 
 }
