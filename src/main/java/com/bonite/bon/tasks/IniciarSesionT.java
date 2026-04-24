@@ -1,7 +1,6 @@
 package com.bonite.bon.tasks;
 
 import com.bonite.bon.models.IniciarSesionM;
-import com.bonite.bon.models.RegistroUsuarioM;
 import com.bonite.bon.utils.LeerDatosExcel;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
@@ -14,7 +13,6 @@ import java.io.IOException;
 
 import static com.bonite.bon.userInterfaces.IniciarSesionUI.*;
 import static com.bonite.bon.userInterfaces.RegistroUsuarioUI.*;
-import static com.bonite.bon.userInterfaces.RegistroUsuarioUI.BTN_REGISTRAR;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;
 
 public class IniciarSesionT implements Task {

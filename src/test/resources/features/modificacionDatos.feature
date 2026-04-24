@@ -1,5 +1,5 @@
 #language:es
-Característica: : Actualizacion de datos del usuario
+Característica: Actualizacion de datos del usuario
 
   Escenario: Actualizacion de datos exitosa
     Dado que el usuario ha iniciado sesión

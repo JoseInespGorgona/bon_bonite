@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Inicio de sesion" skipped="0" tests="1" time="0.71" timestamp="2026-04-16 02:40:14"><testcase name="Inicio de sesion exitoso"><error message="No stage available - it looks like you haven't called the setTheStage() method before calling this one." type="net.serenitybdd.screenplay.actors.NoStageException">No stage available - it looks like you haven't called the setTheStage() method before calling this one.</error><system-err>No stage available - it looks like you haven't called the setTheStage() method before calling this one.&#13;
+com.bonite.bon.stepDefinitions.IniciarSesionSD.que_el_usuario_esta_en_la_pagina_de_login(IniciarSesionSD.java:16)&#13;
+✽.que el usuario esta en la pagina de login(file:///C:/Users/Ing.%20Gorgona/IdeaProjects/bon-bonite/src/test/resources/features/inicioSesion.feature:6)&#13;
+</system-err></testcase></testsuite>
