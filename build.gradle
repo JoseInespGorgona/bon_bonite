@@ -50,7 +50,7 @@ test {
 
 serenity {
     // Especifica el paquete raíz donde se encuentran los runners
-    testRoot = "com.telefonica.runners"
+    testRoot = "com.bonite.bon.runners"
 
     // Directorio base de los requerimientos (features)
     requirementsBaseDir = ["src/test/resources/features/"]
@@ -72,21 +72,24 @@ task cleanReports(type: Delete) {
     delete file("target/site/serenity")
 }
 
-/*task openReport(type: Exec) {
-    def os = System.getProperty("os.name").toLowerCase()
-    def reportPath = file("target/site/serenity/index.html").absolutePath
+task openReport {
+    doLast {
+        def reportFile = file("target/site/serenity/index.html")
+        def os = System.getProperty("os.name").toLowerCase()
 
-    if (os.contains("windows")) {
-        commandLine "cmd", "/c", "start", reportPath
-    } else if (os.contains("mac")) {
-        commandLine "open", reportPath
-    } else if (os.contains("linux")) {
-        commandLine "xdg-open", reportPath
+        if (os.contains("windows")) {
+            new ProcessBuilder("rundll32", "url.dll,FileProtocolHandler", reportFile.absolutePath)
+                    .start()
+        } else if (os.contains("mac")) {
+            new ProcessBuilder("open", reportFile.absolutePath).start()
+        } else if (os.contains("linux")) {
+            new ProcessBuilder("xdg-open", reportFile.absolutePath).start()
+        }
     }
-}*/
+}
 
 // Asegúrate de limpiar antes de generar los nuevos reportes
-//test.dependsOn(cleanReports)
+test.dependsOn(cleanReports)
 
 // Abre el reporte después de que se generen los reportes (aggregate)
-//aggregate.finalizedBy(openReport)
+aggregate.finalizedBy(openReport)
